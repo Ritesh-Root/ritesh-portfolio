@@ -1,34 +1,44 @@
-This project is a personal portfolio website built with [Next.js](https://nextjs.org/) to showcase my software engineering journey, skills, work experience, and projects.
+# Ritesh Kumar Mahato — Portfolio
+
+A personal portfolio website built with [Next.js](https://nextjs.org/) to showcase my journey as a Full Stack AI Developer, skills, work experience, and projects.
+
+## 🌐 Live
+
+**[https://riteshhoon.online](https://riteshhoon.online)**
 
 ## Overview
 
-This portfolio website provides an in-depth view of my professional background and skill set. The goal is to present my journey as a full-stack engineer, my core competencies, projects, and work experience in a visually engaging and responsive format.
+This portfolio presents my professional background, core competencies, projects, and work experience in a visually engaging VS Code-inspired format.
 
 ## Features
 
 - **Responsive Design**: Adjusts layout for desktop, tablet, and mobile views.
-- **Skill Showcase**: Highlights my main skills, represented with icons and descriptions.
+- **Skill Showcase**: Highlights my main skills across AI/ML, Frontend, Backend, and Tools.
 - **Work Experience**: Lists relevant positions with key achievements and technologies used.
-- **Project Display**: Showcases significant projects with descriptions, technologies used, and links where applicable.
+- **Project Display**: Showcases significant projects with descriptions, technologies used, and links.
+
+## Projects
+
+- **CaneGrade AI** — AI-powered gate-entry valuation system for sugar mills
+- **SmartShield AI** — Real-time digital safety platform using AI
+- **AI Finance Copilot** — Intelligent financial advisory platform for NSE market
+- **Self-Heal Runtime** — Autonomous crash detection & repair for Java apps
 
 ## Technologies
 
-- **Next.js**: Server-side rendering and static site generation.
-- **React**: UI components.
-- **TypeScript**: Type safety for JavaScript code.
-- **Zustand**: State management for React applications.
-- **CSS Modules / Tailwind CSS**: Styling.
-- **Framer Motion**: Animation library.
-- **React dnd**: Drag and drop functionality.
+- **Next.js 15** — Server-side rendering and static site generation
+- **React** — UI components
+- **TypeScript** — Type safety
+- **Tailwind CSS** — Styling
+- **Zustand** — State management
+- **Framer Motion** — Animations
 
 ## Getting Started
-
-First, run the development server:
 
 1. Clone the repository:
 
 ```bash
-git clone <repo_url>
+git clone https://github.com/Ritesh-Root/ritesh-portfolio.git
 ```
 
 2. Install dependencies:
@@ -43,21 +53,8 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Zustand](https://github.com/pmndrs/zustand) - a state management library for React.
-- [React Dnd](https://github.com/react-dnd/react-dnd) - drag and drop library for React.
-- [Framer Motion](https://www.framer.com/motion/) - animation library.
-- [Tailwind CSS](https://tailwindcss.com/) - utility-first CSS framework.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open [https://riteshhoon.online](https://riteshhoon.online) to see the live version, or visit `http://localhost:3000` for local development.
 
 ## Deploy on Vercel
 
-The DApp is deployed on Vercel at [https://andrew-portfolio-sand.vercel.app/](https://andrew-portfolio-sand.vercel.app/).
+Deployed on Vercel at [https://riteshhoon.online](https://riteshhoon.online).
