@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1033;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg2)"/>
+  <!-- Grid pattern -->
+  <g opacity="0.04">
+    <line x1="0" y1="0" x2="0" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="80" y1="0" x2="80" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="160" y1="0" x2="160" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="240" y1="0" x2="240" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="320" y1="0" x2="320" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="480" y1="0" x2="480" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="560" y1="0" x2="560" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="640" y1="0" x2="640" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="720" y1="0" x2="720" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="60" x2="800" y2="60" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="120" x2="800" y2="120" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="180" x2="800" y2="180" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="240" x2="800" y2="240" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="360" x2="800" y2="360" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="420" x2="800" y2="420" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="480" x2="800" y2="480" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="540" x2="800" y2="540" stroke="white" stroke-width="1"/>
+  </g>
+  <!-- Decorative circles -->
+  <circle cx="680" cy="120" r="100" fill="#8b5cf6" opacity="0.06"/>
+  <circle cx="120" cy="500" r="70" fill="#8b5cf6" opacity="0.05"/>
+  <!-- Shield icon background -->
+  <path d="M700 80 L700 160 Q700 200 670 220 L700 80Z" fill="#8b5cf6" opacity="0.04"/>
+  <!-- Top bar -->
+  <rect x="40" y="30" width="720" height="45" rx="8" fill="url(#card2)" stroke="#334155" stroke-width="1"/>
+  <circle cx="65" cy="52" r="6" fill="#ef4444"/>
+  <circle cx="85" cy="52" r="6" fill="#eab308"/>
+  <circle cx="105" cy="52" r="6" fill="#22c55e"/>
+  <text x="400" y="57" text-anchor="middle" fill="#94a3b8" font-family="monospace" font-size="13">SmartShield AI — Digital Safety Platform</text>
+  <!-- Threat Monitor Panel -->
+  <rect x="40" y="90" width="340" height="200" rx="12" fill="url(#card2)" stroke="#334155" stroke-width="1"/>
+  <text x="60" y="118" fill="#e2e8f0" font-family="sans-serif" font-size="15" font-weight="bold">🛡️ Threat Monitor</text>
+  <text x="60" y="138" fill="#64748b" font-family="sans-serif" font-size="11">Real-time content analysis</text>
+  <!-- Threat level bars -->
+  <text x="60" y="165" fill="#94a3b8" font-family="monospace" font-size="10">Text Toxicity</text>
+  <rect x="170" y="155" width="190" height="12" rx="6" fill="#1e293b"/>
+  <rect x="170" y="155" width="45" height="12" rx="6" fill="#22c55e"/>
+  <text x="220" y="164" fill="#22c55e" font-family="monospace" font-size="9">LOW</text>
+  <text x="60" y="192" fill="#94a3b8" font-family="monospace" font-size="10">NSFW Score</text>
+  <rect x="170" y="182" width="190" height="12" rx="6" fill="#1e293b"/>
+  <rect x="170" y="182" width="20" height="12" rx="6" fill="#22c55e"/>
+  <text x="195" y="191" fill="#22c55e" font-family="monospace" font-size="9">SAFE</text>
+  <text x="60" y="219" fill="#94a3b8" font-family="monospace" font-size="10">Behavior Pattern</text>
+  <rect x="170" y="209" width="190" height="12" rx="6" fill="#1e293b"/>
+  <rect x="170" y="209" width="110" height="12" rx="6" fill="#eab308"/>
+  <text x="285" y="218" fill="#eab308" font-family="monospace" font-size="9">MODERATE</text>
+  <text x="60" y="246" fill="#94a3b8" font-family="monospace" font-size="10">Creep Score</text>
+  <rect x="170" y="236" width="190" height="12" rx="6" fill="#1e293b"/>
+  <rect x="170" y="236" width="60" height="12" rx="6" fill="#eab308"/>
+  <text x="235" y="245" fill="#eab308" font-family="monospace" font-size="9">0.32</text>
+  <!-- Unified Threat Score -->
+  <rect x="40" y="305" width="340" height="110" rx="12" fill="url(#card2)" stroke="#334155" stroke-width="1"/>
+  <text x="60" y="333" fill="#e2e8f0" font-family="sans-serif" font-size="14" font-weight="bold">Unified Creep Score</text>
+  <!-- Big score display -->
+  <text x="210" y="395" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="48" font-weight="bold">0.18</text>
+  <text x="300" y="395" fill="#22c55e" font-family="sans-serif" font-size="14">/ 1.0</text>
+  <!-- Content Disposition -->
+  <rect x="400" y="90" width="360" height="130" rx="12" fill="url(#card2)" stroke="#334155" stroke-width="1"/>
+  <text x="420" y="118" fill="#e2e8f0" font-family="sans-serif" font-size="14" font-weight="bold">Content Disposition</text>
+  <!-- Action buttons -->
+  <rect x="420" y="135" width="75" height="30" rx="15" fill="#22c55e" opacity="0.2" stroke="#22c55e" stroke-width="1"/>
+  <text x="457" y="155" text-anchor="middle" fill="#22c55e" font-family="sans-serif" font-size="12" font-weight="bold">ALLOW</text>
+  <rect x="505" y="135" width="70" height="30" rx="15" fill="#eab308" opacity="0.2" stroke="#eab308" stroke-width="1"/>
+  <text x="540" y="155" text-anchor="middle" fill="#eab308" font-family="sans-serif" font-size="12" font-weight="bold">WARN</text>
+  <rect x="585" y="135" width="65" height="30" rx="15" fill="#f97316" opacity="0.2" stroke="#f97316" stroke-width="1"/>
+  <text x="617" y="155" text-anchor="middle" fill="#f97316" font-family="sans-serif" font-size="12" font-weight="bold">BLUR</text>
+  <rect x="660" y="135" width="75" height="30" rx="15" fill="#ef4444" opacity="0.2" stroke="#ef4444" stroke-width="1"/>
+  <text x="697" y="155" text-anchor="middle" fill="#ef4444" font-family="sans-serif" font-size="12" font-weight="bold">BLOCK</text>
+  <!-- Current verdict -->
+  <rect x="420" y="178" width="320" height="25" rx="6" fill="#22c55e" opacity="0.1"/>
+  <text x="580" y="195" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="12">✓ Content ALLOWED — No threats detected</text>
+  <!-- AI Reasoning Panel -->
+  <rect x="400" y="235" width="360" height="180" rx="12" fill="url(#card2)" stroke="#334155" stroke-width="1"/>
+  <text x="420" y="263" fill="#e2e8f0" font-family="sans-serif" font-size="14" font-weight="bold">🧠 Explainable AI Reasoning</text>
+  <!-- Reasoning lines -->
+  <text x="420" y="290" fill="#94a3b8" font-family="monospace" font-size="10">→ Toxic-BERT: No hate speech detected</text>
+  <text x="420" y="310" fill="#94a3b8" font-family="monospace" font-size="10">→ NSFW Classifier: Image is safe (99.2%)</text>
+  <text x="420" y="330" fill="#94a3b8" font-family="monospace" font-size="10">→ Behavior: Mild repetition pattern</text>
+  <text x="420" y="350" fill="#94a3b8" font-family="monospace" font-size="10">→ Context: Educational discussion forum</text>
+  <text x="420" y="375" fill="#8b5cf6" font-family="monospace" font-size="11">Confidence: 96.4% | Latency: 23ms</text>
+  <text x="420" y="400" fill="#64748b" font-family="monospace" font-size="9">Privacy: Ephemeral mode — no data stored</text>
+  <!-- Bottom stats -->
+  <rect x="40" y="430" width="175" height="80" rx="12" fill="url(#card2)" stroke="#334155" stroke-width="1"/>
+  <text x="60" y="455" fill="#64748b" font-family="sans-serif" font-size="11">Scans Today</text>
+  <text x="60" y="490" fill="#8b5cf6" font-family="monospace" font-size="28" font-weight="bold">12.4K</text>
+  <rect x="230" y="430" width="175" height="80" rx="12" fill="url(#card2)" stroke="#334155" stroke-width="1"/>
+  <text x="250" y="455" fill="#64748b" font-family="sans-serif" font-size="11">Threats Blocked</text>
+  <text x="250" y="490" fill="#ef4444" font-family="monospace" font-size="28" font-weight="bold">847</text>
+  <rect x="420" y="430" width="175" height="80" rx="12" fill="url(#card2)" stroke="#334155" stroke-width="1"/>
+  <text x="440" y="455" fill="#64748b" font-family="sans-serif" font-size="11">Accuracy</text>
+  <text x="440" y="490" fill="#22c55e" font-family="monospace" font-size="28" font-weight="bold">97.8%</text>
+  <rect x="610" y="430" width="150" height="80" rx="12" fill="url(#card2)" stroke="#334155" stroke-width="1"/>
+  <text x="630" y="455" fill="#64748b" font-family="sans-serif" font-size="11">Avg Latency</text>
+  <text x="630" y="490" fill="#8b5cf6" font-family="monospace" font-size="28" font-weight="bold">23ms</text>
+  <!-- Tech badges -->
+  <rect x="40" y="525" width="720" height="50" rx="12" fill="url(#card2)" stroke="#334155" stroke-width="1"/>
+  <text x="60" y="548" fill="#64748b" font-family="sans-serif" font-size="11">Built with</text>
+  <rect x="130" y="537" width="65" height="22" rx="11" fill="#3b82f6" opacity="0.15"/>
+  <text x="162" y="552" text-anchor="middle" fill="#60a5fa" font-family="monospace" font-size="10">Python</text>
+  <rect x="205" y="537" width="65" height="22" rx="11" fill="#22c55e" opacity="0.15"/>
+  <text x="237" y="552" text-anchor="middle" fill="#4ade80" font-family="monospace" font-size="10">FastAPI</text>
+  <rect x="280" y="537" width="90" height="22" rx="11" fill="#eab308" opacity="0.15"/>
+  <text x="325" y="552" text-anchor="middle" fill="#fbbf24" font-family="monospace" font-size="10">HuggingFace</text>
+  <rect x="380" y="537" width="80" height="22" rx="11" fill="#8b5cf6" opacity="0.15"/>
+  <text x="420" y="552" text-anchor="middle" fill="#a78bfa" font-family="monospace" font-size="10">Toxic-BERT</text>
+  <rect x="470" y="537" width="80" height="22" rx="11" fill="#f97316" opacity="0.15"/>
+  <text x="510" y="552" text-anchor="middle" fill="#fb923c" font-family="monospace" font-size="10">JavaScript</text>
+</svg>

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a5f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Grid pattern -->
+  <g opacity="0.05">
+    <line x1="0" y1="0" x2="0" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="80" y1="0" x2="80" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="160" y1="0" x2="160" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="240" y1="0" x2="240" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="320" y1="0" x2="320" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="480" y1="0" x2="480" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="560" y1="0" x2="560" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="640" y1="0" x2="640" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="720" y1="0" x2="720" y2="600" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="60" x2="800" y2="60" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="120" x2="800" y2="120" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="180" x2="800" y2="180" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="240" x2="800" y2="240" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="360" x2="800" y2="360" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="420" x2="800" y2="420" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="480" x2="800" y2="480" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="540" x2="800" y2="540" stroke="white" stroke-width="1"/>
+  </g>
+  <!-- Decorative circles -->
+  <circle cx="650" cy="100" r="120" fill="#22c55e" opacity="0.08"/>
+  <circle cx="150" cy="480" r="80" fill="#22c55e" opacity="0.06"/>
+  <!-- Top bar -->
+  <rect x="40" y="30" width="720" height="45" rx="8" fill="url(#card)" stroke="#334155" stroke-width="1"/>
+  <circle cx="65" cy="52" r="6" fill="#ef4444"/>
+  <circle cx="85" cy="52" r="6" fill="#eab308"/>
+  <circle cx="105" cy="52" r="6" fill="#22c55e"/>
+  <text x="400" y="57" text-anchor="middle" fill="#94a3b8" font-family="monospace" font-size="13">CaneGrade AI — Gate-Entry Valuation System</text>
+  <!-- Main dashboard card -->
+  <rect x="40" y="90" width="440" height="280" rx="12" fill="url(#card)" stroke="#334155" stroke-width="1"/>
+  <!-- Chart area -->
+  <text x="60" y="120" fill="#e2e8f0" font-family="sans-serif" font-size="16" font-weight="bold">Cane Quality Analysis</text>
+  <text x="60" y="140" fill="#64748b" font-family="sans-serif" font-size="11">Real-time trash detection &amp; recovery estimation</text>
+  <!-- Bar chart -->
+  <rect x="70" y="170" width="35" height="120" rx="4" fill="#22c55e" opacity="0.8"/>
+  <rect x="120" y="200" width="35" height="90" rx="4" fill="#22c55e" opacity="0.6"/>
+  <rect x="170" y="180" width="35" height="110" rx="4" fill="#22c55e" opacity="0.7"/>
+  <rect x="220" y="220" width="35" height="70" rx="4" fill="#eab308" opacity="0.7"/>
+  <rect x="270" y="160" width="35" height="130" rx="4" fill="#22c55e" opacity="0.9"/>
+  <rect x="320" y="240" width="35" height="50" rx="4" fill="#ef4444" opacity="0.6"/>
+  <rect x="370" y="190" width="35" height="100" rx="4" fill="#22c55e" opacity="0.75"/>
+  <!-- Labels -->
+  <text x="87" y="310" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">S1</text>
+  <text x="137" y="310" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">S2</text>
+  <text x="187" y="310" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">S3</text>
+  <text x="237" y="310" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">S4</text>
+  <text x="287" y="310" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">S5</text>
+  <text x="337" y="310" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">S6</text>
+  <text x="387" y="310" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">S7</text>
+  <!-- Net Clean Cane gauge -->
+  <text x="60" y="345" fill="#e2e8f0" font-family="sans-serif" font-size="13" font-weight="bold">Net Clean Cane Score</text>
+  <rect x="60" y="355" width="400" height="8" rx="4" fill="#1e293b"/>
+  <rect x="60" y="355" width="310" height="8" rx="4" fill="url(#accent)"/>
+  <text x="380" y="363" fill="#22c55e" font-family="monospace" font-size="11">78.2%</text>
+  <!-- Side panel -->
+  <rect x="500" y="90" width="260" height="130" rx="12" fill="url(#card)" stroke="#334155" stroke-width="1"/>
+  <text x="520" y="118" fill="#e2e8f0" font-family="sans-serif" font-size="14" font-weight="bold">Decision Engine</text>
+  <!-- Status badges -->
+  <rect x="520" y="132" width="80" height="26" rx="13" fill="#22c55e" opacity="0.15"/>
+  <text x="560" y="150" text-anchor="middle" fill="#22c55e" font-family="sans-serif" font-size="11" font-weight="bold">ACCEPT</text>
+  <rect x="610" y="132" width="65" height="26" rx="13" fill="#eab308" opacity="0.15"/>
+  <text x="642" y="150" text-anchor="middle" fill="#eab308" font-family="sans-serif" font-size="11" font-weight="bold">WARN</text>
+  <rect x="685" y="132" width="65" height="26" rx="13" fill="#ef4444" opacity="0.15"/>
+  <text x="717" y="150" text-anchor="middle" fill="#ef4444" font-family="sans-serif" font-size="11" font-weight="bold">REJECT</text>
+  <text x="520" y="185" fill="#64748b" font-family="monospace" font-size="10">Trash Level: 12.4%</text>
+  <text x="520" y="202" fill="#64748b" font-family="monospace" font-size="10">Recovery Est: 9.8%</text>
+  <!-- AI Analysis card -->
+  <rect x="500" y="235" width="260" height="135" rx="12" fill="url(#card)" stroke="#334155" stroke-width="1"/>
+  <text x="520" y="263" fill="#e2e8f0" font-family="sans-serif" font-size="14" font-weight="bold">🤖 AI Analysis</text>
+  <text x="520" y="288" fill="#94a3b8" font-family="sans-serif" font-size="11">Computer Vision Output</text>
+  <!-- Fake image grid -->
+  <rect x="520" y="300" width="50" height="50" rx="6" fill="#334155"/>
+  <rect x="578" y="300" width="50" height="50" rx="6" fill="#334155"/>
+  <rect x="636" y="300" width="50" height="50" rx="6" fill="#334155"/>
+  <rect x="694" y="300" width="50" height="50" rx="6" fill="#334155"/>
+  <!-- Scan lines on images -->
+  <line x1="525" y1="315" x2="565" y2="315" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
+  <line x1="525" y1="325" x2="565" y2="325" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
+  <line x1="525" y1="335" x2="565" y2="335" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
+  <!-- Bottom stats -->
+  <rect x="40" y="390" width="170" height="90" rx="12" fill="url(#card)" stroke="#334155" stroke-width="1"/>
+  <text x="60" y="418" fill="#64748b" font-family="sans-serif" font-size="11">Samples Today</text>
+  <text x="60" y="455" fill="#22c55e" font-family="monospace" font-size="32" font-weight="bold">247</text>
+  <rect x="230" y="390" width="170" height="90" rx="12" fill="url(#card)" stroke="#334155" stroke-width="1"/>
+  <text x="250" y="418" fill="#64748b" font-family="sans-serif" font-size="11">Avg Recovery</text>
+  <text x="250" y="455" fill="#22c55e" font-family="monospace" font-size="32" font-weight="bold">9.6%</text>
+  <rect x="420" y="390" width="170" height="90" rx="12" fill="url(#card)" stroke="#334155" stroke-width="1"/>
+  <text x="440" y="418" fill="#64748b" font-family="sans-serif" font-size="11">Financial Impact</text>
+  <text x="440" y="455" fill="#22c55e" font-family="monospace" font-size="28" font-weight="bold">₹1.2M</text>
+  <rect x="610" y="390" width="150" height="90" rx="12" fill="url(#card)" stroke="#334155" stroke-width="1"/>
+  <text x="630" y="418" fill="#64748b" font-family="sans-serif" font-size="11">Accuracy</text>
+  <text x="630" y="455" fill="#22c55e" font-family="monospace" font-size="32" font-weight="bold">94%</text>
+  <!-- Tech badges at bottom -->
+  <rect x="40" y="500" width="720" height="70" rx="12" fill="url(#card)" stroke="#334155" stroke-width="1"/>
+  <text x="60" y="525" fill="#64748b" font-family="sans-serif" font-size="11">Built with</text>
+  <rect x="60" y="535" width="65" height="22" rx="11" fill="#3b82f6" opacity="0.15"/>
+  <text x="92" y="550" text-anchor="middle" fill="#60a5fa" font-family="monospace" font-size="10">Python</text>
+  <rect x="135" y="535" width="75" height="22" rx="11" fill="#ef4444" opacity="0.15"/>
+  <text x="172" y="550" text-anchor="middle" fill="#f87171" font-family="monospace" font-size="10">Streamlit</text>
+  <rect x="220" y="535" width="85" height="22" rx="11" fill="#f97316" opacity="0.15"/>
+  <text x="262" y="550" text-anchor="middle" fill="#fb923c" font-family="monospace" font-size="10">Scikit-Learn</text>
+  <rect x="315" y="535" width="65" height="22" rx="11" fill="#8b5cf6" opacity="0.15"/>
+  <text x="347" y="550" text-anchor="middle" fill="#a78bfa" font-family="monospace" font-size="10">Pandas</text>
+  <rect x="390" y="535" width="60" height="22" rx="11" fill="#06b6d4" opacity="0.15"/>
+  <text x="420" y="550" text-anchor="middle" fill="#22d3ee" font-family="monospace" font-size="10">NumPy</text>
+</svg>

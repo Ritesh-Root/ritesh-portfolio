@@ -1,0 +1,9 @@
+export { default as AboutSection } from './AboutSection';
+export { default as WorkExperienceSection } from './WorkExperienceSection';
+export { default as SkillsSection } from './SkillsSection';
+export { default as ProjectsSection } from './ProjectsSection';
+export { default as ContactSection } from './ContactSection';
+export { default as FeaturesSection } from './FeaturesSection';
+export { default as ScreenshotsSection } from './ScreenshotsSection';
+export { default as TechnologiesSection } from './TechnologiesSection';
+export { default as CustomListSection } from './CustomListSection';
