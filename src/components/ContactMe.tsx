@@ -3,10 +3,11 @@
 import { FadeInStagger } from './FadeIn';
 import { ContactMe as ContactMeIcon } from '@/icons';
 import Socials from './Socials';
+import { CONTACT_INFO } from '@/lib/constants/personalInfo';
 
 const ContactMe = () => {
-  const email = 'laiandrew2002@gmail.com';
-  const subject = 'Reach out from portfolio';
+  const email = CONTACT_INFO.email;
+  const subject = CONTACT_INFO.emailSubject;
   // const body = 'Hello, I would like to reach out from your portfolio.';
 
   const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;

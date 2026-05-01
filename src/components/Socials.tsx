@@ -6,11 +6,14 @@ import { FadeIn, FadeInStagger } from './FadeIn';
 import Button from './Button';
 import LinkedinIcon from '@/icons/linkedin';
 import GitHubIcon from '@/icons/github';
+import { SOCIAL_MEDIA_PROFILES } from '@/lib/constants/personalInfo';
 
-export const socialMediaProfiles = [
-  { title: 'Linkedin', href: 'https://www.linkedin.com/in/andrew-lai-abc/' },
-  { title: 'GitHub', href: 'https://github.com/laiandrew2002' },
-];
+export const socialMediaProfiles = SOCIAL_MEDIA_PROFILES.map(
+  ({ title, href }) => ({
+    title,
+    href,
+  })
+);
 
 export default function Socials({
   className,
