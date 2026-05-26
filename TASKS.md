@@ -12,6 +12,7 @@
 - Confirmed the local home page and profile image route return `200 OK`.
 - Fixed missing project technology logos across all app detail pages.
 - Confirmed every `/logos/...` reference in `src/app`, `src/lib`, and `src/components` points to an existing file.
+- Set the canonical production domain to `https://riteshhoon.online` for app metadata and Vercel environment documentation.
 
 ## Pending
 

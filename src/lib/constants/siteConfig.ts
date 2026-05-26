@@ -2,12 +2,20 @@
  * Site-wide configuration constants
  */
 
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') ||
+  'https://riteshhoon.online';
+
 export const SITE_CONFIG = {
   name: 'Ritesh Portfolio',
   title: 'Ritesh Kumar Mahato - Full Stack AI Developer',
   description:
     'Portfolio website showcasing full-stack AI development projects, hackathon wins, and experience',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+  url: SITE_URL,
+  hosting: {
+    provider: 'Vercel',
+    url: SITE_URL,
+  },
   author: {
     name: 'Ritesh Kumar Mahato',
     email: 'riteshmahatowork@gmail.com',

@@ -14,6 +14,7 @@ import { sections as canegradeAiSections } from '@/app/apps/canegrade-ai/page';
 import { sections as smartshieldAiSections } from '@/app/apps/smartshield-ai/page';
 import { sections as aiFinanceCopilotSections } from '@/app/apps/ai-finance-copilot/page';
 import { sections as selfHealRuntimeSections } from '@/app/apps/self-heal-runtime/page';
+import { SITE_CONFIG } from '@/lib/constants/siteConfig';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -27,9 +28,21 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_CONFIG.url),
   title: 'Ritesh Kumar Mahato - Portfolio',
   description:
     'Full Stack AI Developer portfolio showcasing projects, skills, and hackathon work.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Ritesh Kumar Mahato - Portfolio',
+    description:
+      'Full Stack AI Developer portfolio showcasing projects, skills, and hackathon work.',
+    url: SITE_CONFIG.url,
+    siteName: SITE_CONFIG.name,
+    type: 'website',
+  },
 };
 
 export interface MyWork {

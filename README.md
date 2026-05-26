@@ -55,6 +55,14 @@ npm run dev
 
 Open [https://riteshhoon.online](https://riteshhoon.online) to see the live version, or visit `http://localhost:3000` for local development.
 
+## Environment
+
+Set the canonical site URL when deploying:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://riteshhoon.online
+```
+
 ## Deploy on Vercel
 
-Deployed on Vercel at [https://riteshhoon.online](https://riteshhoon.online).
+Hosted on Vercel at [https://riteshhoon.online](https://riteshhoon.online).

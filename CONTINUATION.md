@@ -15,6 +15,7 @@
 - Fixed missing project technology logos across all app detail pages.
 - Confirmed every `/logos/...` reference in `src/app`, `src/lib`, and `src/components` points to an existing file.
 - Restarted the local dev server and confirmed all four app detail routes plus affected logo assets return `200 OK`.
+- Set `https://riteshhoon.online` as the canonical production domain in app config, metadata, README, and `.env.example`.
 
 ## Still Pending
 
@@ -38,6 +39,11 @@ Visually inspect the home page, profile image, responsive layout, and project li
 - `src/app/apps/self-heal-runtime/page.tsx`
 - `src/app/apps/smartshield-ai/page.tsx`
 - `public/logos/echarts-logo.svg`
+- `src/lib/constants/siteConfig.ts`
+- `src/app/layout.tsx`
+- `README.md`
+- `.env.example`
+- `.gitignore`
 - `PLAN.md`
 - `ROADMAP.md`
 - `TASKS.md`

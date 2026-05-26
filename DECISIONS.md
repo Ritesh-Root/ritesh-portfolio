@@ -19,3 +19,7 @@ Upgraded `next` and `eslint-config-next` to `15.5.18` and pinned `postcss` to `8
 ## 2026-05-26 - Fix Project Technology Logos
 
 Fixed broken project-detail logo paths by using existing `.webp` and `.svg` assets where available. Added a small local `echarts-logo.svg` because no ECharts asset existed in the repository.
+
+## 2026-05-26 - Set Canonical Portfolio Domain
+
+Set `https://riteshhoon.online` as the canonical production URL and documented `NEXT_PUBLIC_SITE_URL` for Vercel. This keeps metadata, environment setup, and GitHub project context aligned with the hosted website.
