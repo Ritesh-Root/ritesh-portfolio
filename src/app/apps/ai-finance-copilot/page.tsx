@@ -41,20 +41,24 @@ const technologies = [
     image: '/logos/ts-logo.png',
     link: 'https://typescriptlang.org/',
   },
-  { name: 'Vite', image: '/logos/vite-logo.png', link: 'https://vitejs.dev/' },
+  {
+    name: 'Vite',
+    image: '/logos/vite-logo.webp',
+    link: 'https://vitejs.dev/',
+  },
   {
     name: 'Supabase',
-    image: '/logos/supabase-logo.png',
+    image: '/logos/supabase-logo.webp',
     link: 'https://supabase.com/',
   },
   {
     name: 'Groq API',
-    image: '/logos/groq-logo.png',
+    image: '/logos/groq-logo.webp',
     link: 'https://groq.com/',
   },
   {
     name: 'ECharts',
-    image: '/logos/echarts-logo.png',
+    image: '/logos/echarts-logo.svg',
     link: 'https://echarts.apache.org/',
   },
 ];

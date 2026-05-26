@@ -38,12 +38,12 @@ const technologies = [
   },
   {
     name: 'FastAPI',
-    image: '/logos/fastapi-logo.png',
+    image: '/logos/fastapi-logo.webp',
     link: 'https://fastapi.tiangolo.com/',
   },
   {
     name: 'HuggingFace',
-    image: '/logos/huggingface-logo.png',
+    image: '/logos/huggingface-logo.webp',
     link: 'https://huggingface.co/',
   },
   {

@@ -13,7 +13,7 @@ export const PERSONAL_INFO = {
     src: '/ritesh-profile.png',
     alt: 'ritesh portrait',
     width: 200,
-    height: 208,
+    height: 200,
   },
   languages: [
     {

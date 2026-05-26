@@ -38,20 +38,20 @@ const technologies = [
   },
   {
     name: 'Streamlit',
-    image: '/logos/streamlit-logo.png',
+    image: '/logos/streamlit-logo.webp',
     link: 'https://streamlit.io/',
   },
   {
     name: 'Scikit-Learn',
-    image: '/logos/sklearn-logo.png',
+    image: '/logos/sklearn-logo.webp',
     link: 'https://scikit-learn.org/',
   },
   {
     name: 'Pandas',
-    image: '/logos/pandas-logo.png',
+    image: '/logos/pandas-logo.svg',
     link: 'https://pandas.pydata.org/',
   },
-  { name: 'NumPy', image: '/logos/numpy-logo.png', link: 'https://numpy.org/' },
+  { name: 'NumPy', image: '/logos/numpy-logo.svg', link: 'https://numpy.org/' },
   {
     name: 'Pillow',
     image: '/logos/python-logo.png',

@@ -33,7 +33,7 @@ const metadata: AppPageMetadata = {
 const technologies = [
   {
     name: 'Java',
-    image: '/logos/java-logo.png',
+    image: '/logos/java-logo.webp',
     link: 'https://www.java.com/',
   },
   {
@@ -49,12 +49,12 @@ const technologies = [
   },
   {
     name: 'Gemini AI',
-    image: '/logos/gemini-logo.png',
+    image: '/logos/google-ai-logo.png',
     link: 'https://ai.google.dev/',
   },
   {
     name: 'Maven',
-    image: '/logos/java-logo.png',
+    image: '/logos/java-logo.webp',
     link: 'https://maven.apache.org/',
   },
 ];
