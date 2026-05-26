@@ -22,6 +22,9 @@ pnpm-lock.yaml
 .vscode/
 .idea/
 
+# Local agent state
+.omx/
+
 # OS files
 .DS_Store
 Thumbs.db
