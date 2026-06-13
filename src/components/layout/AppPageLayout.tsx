@@ -6,7 +6,6 @@ import Border from '@/components/Border';
 import Section from '@/components/Section';
 import { FadeIn, FadeInStagger } from '@/components/FadeIn';
 import Button from '@/components/Button';
-import Link from 'next/link';
 import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
 import AppPageHeader from '@/components/CollapsableMenu/components/AppPageHeader';
 
@@ -92,17 +91,14 @@ const AppPageLayout = ({
                   {metadata.websiteUrl && (
                     <div className="mt-5">
                       <Button
-                        className="flex items-center gap-x-2"
+                        className="flex w-fit items-center gap-x-2"
                         variant="secondary"
                         arrow="right"
+                        href={metadata.websiteUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        <Link
-                          href={metadata.websiteUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Visit Website
-                        </Link>
+                        Visit Website
                       </Button>
                     </div>
                   )}

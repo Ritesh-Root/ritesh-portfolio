@@ -27,8 +27,6 @@ const ContactSection = memo<ContactSectionProps>(({ className }) => {
             <ContactMeIcon />
             <a
               href={mailtoLink}
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-block font-medium text-blue-500 transition-colors hover:text-blue-700"
             >
               {CONTACT_INFO.email}

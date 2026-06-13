@@ -73,34 +73,39 @@ const useExplorerStore = create<ExplorerState>(set => ({
         'subMenu-' + SubMenu.PORTFOLIO
       ) as HTMLDivElement;
 
+      // Build new nested objects rather than mutating state in place so
+      // Zustand selectors subscribed to `editor`/`portfolio` see fresh refs.
+      const editor = { ...state.editor };
+      const portfolio = { ...state.portfolio };
+
       if (state[subMenu].open) {
         if (subMenu === SubMenu.EDITOR) {
           const editorsScrollHeight = subMenuEditor.clientHeight;
-          state.editor.maxHeight = '0px';
+          editor.maxHeight = '0px';
 
           if (state.portfolio.open) {
-            state.portfolio.height = `${subMenuPortfolio.clientHeight + editorsScrollHeight}px`;
-            state.portfolio.maxHeight = `${subMenuPortfolio.scrollHeight + editorsScrollHeight}px`;
+            portfolio.height = `${subMenuPortfolio.clientHeight + editorsScrollHeight}px`;
+            portfolio.maxHeight = `${subMenuPortfolio.scrollHeight + editorsScrollHeight}px`;
           }
         } else if (subMenu === SubMenu.PORTFOLIO) {
-          state.portfolio.height = '0px';
-          state.portfolio.maxHeight = '0px';
+          portfolio.height = '0px';
+          portfolio.maxHeight = '0px';
         }
       } else {
         if (subMenu === SubMenu.EDITOR) {
           let newHeight = subMenuPortfolio.clientHeight;
 
           if (subMenuEditor.scrollHeight > 100) {
-            state.editor.maxHeight = '100px';
+            editor.maxHeight = '100px';
             newHeight -= 100;
           } else {
-            state.editor.maxHeight = `${subMenuEditor.scrollHeight}px`;
+            editor.maxHeight = `${subMenuEditor.scrollHeight}px`;
             newHeight -= subMenuEditor.scrollHeight;
           }
 
           if (state.portfolio.open) {
-            state.portfolio.maxHeight = `${newHeight}px`;
-            state.portfolio.height = `${newHeight}px`;
+            portfolio.maxHeight = `${newHeight}px`;
+            portfolio.height = `${newHeight}px`;
           }
         } else if (subMenu === SubMenu.PORTFOLIO) {
           const contentNodes = subMenusContainer.children;
@@ -115,18 +120,18 @@ const useExplorerStore = create<ExplorerState>(set => ({
 
           const availableHeight =
             subMenusContainer.scrollHeight - contentHeight;
-          state.portfolio.height = `${availableHeight}px`;
-          state.portfolio.maxHeight = `${availableHeight}px`;
+          portfolio.height = `${availableHeight}px`;
+          portfolio.maxHeight = `${availableHeight}px`;
         }
       }
 
       if (subMenu === SubMenu.EDITOR) {
-        state.editor.open = !state.editor.open;
+        editor.open = !editor.open;
       } else if (subMenu === SubMenu.PORTFOLIO) {
-        state.portfolio.open = !state.portfolio.open;
+        portfolio.open = !portfolio.open;
       }
 
-      return { ...state }; // Ensure state is updated
+      return { editor, portfolio };
     }),
 }));
 

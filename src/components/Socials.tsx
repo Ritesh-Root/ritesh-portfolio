@@ -28,10 +28,11 @@ export default function Socials({
       className={clsx('mt-5 flex gap-x-4 text-white', className)}
     >
       {socialMediaProfiles.map(({ title, href }) => (
-        <FadeIn key={title}>
+        <FadeIn key={title} role="listitem">
           <Link
             href={href}
             target="_blank"
+            rel="noopener noreferrer"
             aria-label={title}
             className="transition duration-200 hover:text-white/80"
           >
