@@ -70,9 +70,9 @@ const SubCollapsableMenu = ({
         </button>
         {open && (hovered || focused) && (
           <div className="absolute bottom-0 right-0 top-0 mx-1 my-[1px] flex">
-            {subMenuButtons.map((button, index) => (
+            {subMenuButtons.map(button => (
               <button
-                key={index}
+                key={button.id}
                 className="rounded-md p-[2px] hover:bg-gray-300"
               >
                 {button.button}

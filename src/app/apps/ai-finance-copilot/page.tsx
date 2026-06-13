@@ -39,7 +39,7 @@ const technologies = [
   {
     name: 'TypeScript',
     image: '/logos/ts-logo.png',
-    link: 'https://typescriptlang.org/',
+    link: 'https://www.typescriptlang.org/',
   },
   {
     name: 'Vite',

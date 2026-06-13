@@ -44,6 +44,11 @@ export const useLazyLoad = (options: UseLazyLoadOptions = {}) => {
 
     if (observer) {
       observer.observe(element);
+    } else {
+      // IntersectionObserver unavailable (e.g. older browsers) — load eagerly
+      // so content is never permanently hidden.
+      setIsIntersecting(true);
+      setHasTriggered(true);
     }
 
     return () => {

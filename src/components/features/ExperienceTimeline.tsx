@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import Image from 'next/image';
-import Link from 'next/link';
 import { FadeIn } from '../FadeIn';
 import Border from '../Border';
 import Pill from '../Pill';
@@ -87,57 +86,8 @@ interface ExperienceAchievementProps {
 }
 
 const ExperienceAchievement = ({ achievement }: ExperienceAchievementProps) => {
-  // Handle special cases for links in descriptions
   const renderDescription = () => {
     if (typeof achievement.description === 'string') {
-      // Handle Bake website links
-      if (
-        achievement.description.includes('Bake website') &&
-        achievement.description.includes('Bake web application')
-      ) {
-        return (
-          <>
-            Spearheaded development and maintenance for high-traffic web
-            applications, delivering a seamless user experience across{' '}
-            <Link
-              href="https://bake.io"
-              target="_blank"
-              className="text-blue-500 underline"
-            >
-              Bake website
-            </Link>{' '}
-            and{' '}
-            <Link
-              href="https://app.bake.io"
-              target="_blank"
-              className="text-blue-500 underline"
-            >
-              Bake web application
-            </Link>{' '}
-            using React (TypeScript), Redux, and Node.js (Express/TypeScript),
-            Postgres Database and Redis.
-          </>
-        );
-      }
-
-      // Handle LifeSG app link
-      if (achievement.description.includes('LifeSG mobile application')) {
-        return (
-          <>
-            Contributed to the{' '}
-            <Link
-              href="https://www.life.gov.sg/app"
-              target="_blank"
-              className="text-blue-500 underline"
-            >
-              LifeSG mobile application
-            </Link>{' '}
-            (iOS & Android) with React Native (TypeScript), enhancing user
-            experience through performance optimization and clean UI design.
-          </>
-        );
-      }
-
       return (
         <>
           <b>{achievement.title ? achievement.title + ': ' : ''}</b>
@@ -150,18 +100,14 @@ const ExperienceAchievement = ({ achievement }: ExperienceAchievementProps) => {
   };
 
   return (
-    <div className="py-1">
-      <ul className="list-disc pl-4">
-        <li className="text-md text-gray-500">
-          {renderDescription()}
-          {achievement.impact && (
-            <div className="mt-1 text-sm italic text-gray-400">
-              Impact: {achievement.impact}
-            </div>
-          )}
-        </li>
-      </ul>
-    </div>
+    <li className="text-md py-1 text-gray-500">
+      {renderDescription()}
+      {achievement.impact && (
+        <div className="mt-1 text-sm italic text-gray-400">
+          Impact: {achievement.impact}
+        </div>
+      )}
+    </li>
   );
 };
 
