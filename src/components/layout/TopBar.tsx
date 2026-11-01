@@ -13,6 +13,7 @@ import {
   VSCode,
 } from '@/icons';
 import { useTogglePortfolio } from '@/lib/hook/useTogglePortfolio';
+import { useOpenExplorer } from '@/lib/hook/useOpenExplorer';
 import useExpandableStore from '@/lib/store/useExpandableStore';
 import { ComponentProps, MenuBarItem } from '@/lib/types';
 import { cn } from '@/lib/utils';
@@ -94,9 +95,16 @@ const MenuBar = React.memo(function MenuBar({
   onMenuToggle,
   className,
 }: MenuBarProps) {
+  const openExplorer = useOpenExplorer();
+
+  // Below lg the menu items are hidden, so the button opens the Explorer
   const handleMenuToggle = React.useCallback(() => {
-    onMenuToggle?.();
-  }, [onMenuToggle]);
+    if (onMenuToggle) {
+      onMenuToggle();
+    } else {
+      openExplorer();
+    }
+  }, [onMenuToggle, openExplorer]);
 
   return (
     <div className={cn('flex p-1', className)}>
@@ -122,7 +130,7 @@ const MenuBar = React.memo(function MenuBar({
       </nav>
 
       <button
-        className="ml-4 flex items-center rounded-md px-4 py-2 hover:bg-gray-300 focus:bg-gray-300 focus:outline-none lg:hidden"
+        className="ml-1 flex items-center rounded-md px-3 py-2 hover:bg-gray-300 focus:bg-gray-300 focus:outline-none sm:ml-4 sm:px-4 lg:hidden"
         onClick={handleMenuToggle}
         aria-label="Toggle menu"
         type="button"
@@ -194,7 +202,7 @@ const ControlButtons = React.memo(function ControlButtons({
   return (
     <div className={cn('flex', className)} role="toolbar">
       <button
-        className="transform p-3 duration-300 hover:bg-gray-300 focus:bg-gray-300 focus:outline-none"
+        className="transform p-2.5 duration-300 hover:bg-gray-300 focus:bg-gray-300 focus:outline-none sm:p-3"
         onClick={handleMinimize}
         aria-label="Minimize window"
         type="button"
@@ -202,7 +210,7 @@ const ControlButtons = React.memo(function ControlButtons({
         <ChromeMinimize />
       </button>
       <button
-        className="transform p-3 duration-300 hover:bg-gray-300 focus:bg-gray-300 focus:outline-none"
+        className="transform p-2.5 duration-300 hover:bg-gray-300 focus:bg-gray-300 focus:outline-none sm:p-3"
         onClick={handleMaximize}
         aria-label="Maximize window"
         type="button"
@@ -210,7 +218,7 @@ const ControlButtons = React.memo(function ControlButtons({
         <ChromeRestore />
       </button>
       <button
-        className="transform p-3 duration-300 hover:bg-red-500 hover:text-white focus:bg-red-500 focus:text-white focus:outline-none"
+        className="transform p-2.5 duration-300 hover:bg-red-500 hover:text-white focus:bg-red-500 focus:text-white focus:outline-none sm:p-3"
         onClick={handleClose}
         aria-label="Close window"
         type="button"

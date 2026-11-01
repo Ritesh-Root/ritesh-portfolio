@@ -35,6 +35,27 @@
   background: #424344;
 }
 
+/* Phones: thin scrollbar so the editor keeps its width */
+@media (max-width: 767px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+}
+
+/* No blue flash when tapping on Android */
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mouse,
+  .mouse::before,
+  .wave,
+  .skills-picker:before {
+    animation: none;
+  }
+}
+
 .content::-webkit-scrollbar {
   display: none;
 }

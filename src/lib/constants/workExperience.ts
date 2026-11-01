@@ -7,60 +7,63 @@ import { WorkExperience } from '../types/portfolio';
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     id: 'btech-cse',
-    title: 'B.Tech CSE Student & AI Developer',
-    company: "Siksha 'O' Anusandhan University",
-    position: 'B.Tech CSE Student & Full Stack AI Developer',
+    title: 'B.Tech CSE Student & AI Full-Stack Developer',
+    company: "ITER, Siksha 'O' Anusandhan University",
+    position: 'B.Tech CSE & AI Full-Stack Developer',
     startDate: '2025',
-    endDate: 'Present',
+    endDate: '2029',
     description:
-      'Pursuing B.Tech in Computer Science & Engineering while actively building AI-powered projects and competing in hackathons.',
+      'Studying Computer Science & Engineering while building GenAI agents, LLM systems and full-stack products, mostly at hackathons.',
     achievements: [
       {
-        title: 'Hackathon Competitor',
+        title: 'Hackathons',
         description:
-          'Actively participating in national and regional hackathons, building innovative AI solutions under tight deadlines and competing with top engineering talent.',
+          '15+ hackathon builds shipped in 2026, all public on GitHub. 2nd prize at CODENEXUS, 3rd place at CODEFOLIO, Top 10 in Google Code for Communities 2.0 and Rank 6 in PromptWars Virtual.',
       },
       {
-        title: 'CaneGrade AI',
+        title: 'PulsePay',
         description:
-          'Built an AI-powered gate-entry valuation system for sugar mills using computer vision and predictive analytics with Python, Streamlit, and Scikit-Learn.',
+          "Solo-built a phone-less payment system for India's underbanked: face, fingerprint and voice confirm payments, using three Amazon Nova models (multimodal embeddings, Nova 2 Lite risk scoring, Nova 2 Sonic voice). Bonus prize at the Amazon Nova AI Hackathon.",
       },
       {
-        title: 'SmartShield AI',
+        title: 'AGORA',
         description:
-          'Developed a real-time digital safety platform that detects online harassment using text toxicity analysis, NSFW image detection, and behavioral pattern tracking.',
+          'A society of LLM agents that split up tasks, debate approaches and assign themselves work, shown live in a 3D office in the browser, with every agent-to-agent call routed through one observable mesh.',
       },
       {
-        title: 'AI Finance Copilot',
+        title: 'SwarmPilot',
         description:
-          'Created an intelligent financial advisory platform for the Indian NSE market with real-time stock monitoring, AI predictions, and community features using React, TypeScript, and Supabase.',
+          'Runs four specialised agents in parallel (code review, research, dependency analysis, synthesis) and merges them into one report, with shared Zod schemas enforcing the API contract end to end.',
+      },
+      {
+        title: 'EventAI Concierge',
+        description:
+          'A streaming multimodal assistant for physical events: voice in and out, Gemini Vision photo questions and a floor map that highlights answers, grounded in venue data to avoid made-up directions.',
       },
       {
         title: 'Self-Heal Runtime',
         description:
-          'Built an autonomous runtime system that detects and fixes Java application crashes using AI and AST parsing, with a real-time Next.js monitoring dashboard.',
-      },
-      {
-        title: 'AI & Automation Enthusiast',
-        description:
-          'Passionate about using AI tools like Claude for development, automation workflows, and building intelligent developer tools that enhance productivity.',
+          'Detects Java crashes at runtime, extracts the AST context around the failure, asks Gemini for a patch, applies it and re-runs verification, with a live Next.js dashboard.',
       },
     ],
     technologies: [
       { name: 'Python', image: '/logos/python-logo.png', category: 'backend' },
       { name: 'TypeScript', image: '/logos/ts-logo.png', category: 'frontend' },
-      { name: 'React', image: '/logos/react-logo.png', category: 'frontend' },
       {
         name: 'Next.js',
         image: '/logos/nextjs-logo.png',
         category: 'frontend',
       },
-      { name: 'Node.js', image: '/logos/nodejs-logo.png', category: 'backend' },
       {
         name: 'FastAPI',
         image: '/logos/fastapi-logo.webp',
         category: 'backend',
       },
+      { name: 'Node.js', image: '/logos/nodejs-logo.png', category: 'backend' },
+      { name: 'Claude', image: '/logos/claude-logo.webp', category: 'ai' },
+      { name: 'Gemini', image: '/logos/google-ai-logo.png', category: 'ai' },
+      { name: 'AWS Bedrock', image: '/logos/s3-logo.png', category: 'ai' },
+      { name: 'Docker', image: '/logos/docker-logo.png', category: 'tools' },
       {
         name: 'PostgreSQL',
         image: '/logos/postgres-logo.png',

@@ -33,7 +33,7 @@ export default function Socials({
             href={href}
             target="_blank"
             aria-label={title}
-            className="transition duration-200 hover:text-white/80"
+            className="-m-2 inline-flex p-2 transition duration-200 hover:text-white/80"
           >
             {title === 'Linkedin' && (
               <LinkedinIcon className="h-6 w-6 fill-current" />
@@ -47,7 +47,7 @@ export default function Socials({
       {showContactMe && (
         <FadeIn>
           <Button
-            className="flex items-center gap-x-2"
+            className="relative flex items-center gap-x-2 after:absolute after:-inset-y-2 after:inset-x-0 after:content-['']"
             href="/#contact"
             variant="secondary"
             arrow="right"

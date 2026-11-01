@@ -6,4 +6,5 @@ export * from './siteConfig';
 export * from './personalInfo';
 export * from './workExperience';
 export * from './skills';
+export * from './hackathons';
 export * from './projects';

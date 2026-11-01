@@ -32,19 +32,11 @@ const currentJob = WORK_EXPERIENCE[0]; // Most recent job
 ### Skills & Technologies
 
 ```typescript
-import {
-  SKILLS,
-  PROGRAMMING_LANGUAGES,
-  FRONTEND_FRAMEWORKS,
-  BACKEND_FRAMEWORKS,
-  BLOCKCHAIN_TECHNOLOGIES,
-  DEVELOPMENT_TOOLS,
-  ALL_TECHNOLOGIES,
-} from '@/lib/constants';
+import { SKILLS, ALL_TECHNOLOGIES } from '@/lib/constants';
 
 // Usage examples:
 const allSkills = SKILLS; // Grouped by category
-const jsFrameworks = FRONTEND_FRAMEWORKS; // Just frontend technologies
+const frontend = SKILLS.find(s => s.category === 'Frontend & Mobile');
 const allTechs = ALL_TECHNOLOGIES; // Flat array of all technologies
 ```
 

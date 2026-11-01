@@ -4,6 +4,7 @@ import useSectionStore from '@/lib/store/useSectionStore';
 import useTabsStore from '@/lib/store/useTabsStore';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef } from 'react';
+import { isPhoneWidth } from '@/lib/utils/viewport';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const NavigationChange = ({ allPaths }: { allPaths: any[] }) => {
@@ -36,7 +37,7 @@ const NavigationChange = ({ allPaths }: { allPaths: any[] }) => {
       return;
     }
 
-    if (window.innerWidth < 768) {
+    if (isPhoneWidth()) {
       closeIfOpen();
     }
     resetVisible();

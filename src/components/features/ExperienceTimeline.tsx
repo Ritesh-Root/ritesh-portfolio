@@ -32,7 +32,7 @@ const ExperienceItem = ({ experience }: ExperienceItemProps) => {
   return (
     <FadeIn className="group mt-8 flex px-3 first:mt-0">
       <Border className="pt-8 group-first:pt-0 group-first:before:hidden group-first:after:hidden">
-        <div className="mb-4 flex">
+        <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:gap-0">
           <div
             className={clsx(
               'ml-2 mr-4 flex-none self-center overflow-hidden rounded-md'
@@ -58,7 +58,7 @@ const ExperienceItem = ({ experience }: ExperienceItemProps) => {
             </p>
           </div>
         </div>
-        <ul className="list-disc pl-10">
+        <ul className="list-disc pl-4 sm:pl-10">
           {experience.achievements.map((achievement, index) => (
             <ExperienceAchievement key={index} achievement={achievement} />
           ))}

@@ -16,7 +16,7 @@ import { cn } from '@/lib/utils';
 import ToolTip from '../ToolTip';
 import CollapsableMenu from '../CollapsableMenu';
 import useExpandableStore, { Menu } from '@/lib/store/useExpandableStore';
-import useExplorerStore, { SubMenu } from '@/lib/store/useExplorerStore';
+import { useOpenExplorer } from '@/lib/hook/useOpenExplorer';
 import useSectionStore, { Section } from '@/lib/store/useSectionStore';
 import { MyWork } from '@/app/layout';
 
@@ -85,11 +85,7 @@ export default function ActivityBar({
   ...props
 }: ActivityBarProps) {
   const { menu, toggleMenu } = useExpandableStore();
-  const {
-    toggleMenu: toggleExplorer,
-    initial: initialLoad,
-    setInitialLoad,
-  } = useExplorerStore();
+  const openExplorer = useOpenExplorer();
   const { setSections } = useSectionStore();
   const pathname = usePathname();
 
@@ -105,19 +101,11 @@ export default function ActivityBar({
 
   const handleExplorerClick = React.useCallback(() => {
     try {
-      toggleMenu(Menu.EXPLORER);
-
-      if (!initialLoad || window.innerWidth >= 768) return;
-
-      setInitialLoad();
-
-      setTimeout(() => {
-        toggleExplorer(SubMenu.PORTFOLIO);
-      }, 200);
+      openExplorer();
     } catch (error) {
       console.error('Error handling explorer click:', error);
     }
-  }, [toggleMenu, initialLoad, setInitialLoad, toggleExplorer]);
+  }, [openExplorer]);
 
   const handleMenuItemClick = React.useCallback(
     (menuType: string) => {
@@ -226,7 +214,8 @@ const TooltipButton = React.memo(function TooltipButton({
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         className={cn(
-          'relative border-l-2 border-dark_bg p-3 focus:outline-none',
+          // Smaller on phones so the editor keeps more width
+          'relative border-l-2 border-dark_bg p-2 focus:outline-none md:p-3 max-md:[&>svg]:h-7 max-md:[&>svg]:w-7',
           active
             ? 'border-gray-500'
             : 'opacity-50 hover:opacity-90 focus:opacity-90',
@@ -238,7 +227,7 @@ const TooltipButton = React.memo(function TooltipButton({
         {icon}
       </button>
       <ToolTip
-        className="right-0 top-1/2 -translate-y-1/2 translate-x-full"
+        className="right-0 top-1/2 -translate-y-1/2 translate-x-full max-md:hidden"
         active={toolTipActive}
         text={text}
       />

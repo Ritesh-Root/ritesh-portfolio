@@ -4,11 +4,11 @@
 
 export const PERSONAL_INFO = {
   name: 'Ritesh Kumar Mahato',
-  title: 'Full Stack AI Developer',
+  title: 'AI Full-Stack Developer',
   shortBio:
-    'I am a Full Stack AI Developer who loves building seamless, user-centric technology from the database to the interface. Whether competing in hackathons or developing autonomous AI tools, I am driven by the thrill of practical problem-solving.',
+    "I build GenAI agents, LLM systems and full-stack products, and I've shipped 10+ end-to-end projects across payments, multi-agent systems and multimodal assistants, each with a public repo and a working demo. I'm comfortable owning a product solo: API design, LLM orchestration, frontend and deployment.",
   extendedBio:
-    'Currently a B.Tech CSE student with a passion for AI, automation, and building impactful products. I leverage tools like Claude, modern frameworks, and AI APIs to create intelligent solutions that make a real difference.',
+    "I'm a B.Tech CSE student at ITER, Siksha 'O' Anusandhan University (2025–2029). In 2026 I shipped 15+ hackathon builds, placed in national hackathons and made the Top 10 of Google's Code for Communities 2.0. I'm looking for an AI engineering / GenAI full-stack internship building production LLM features.",
   profileImage: {
     src: '/ritesh-profile.png',
     alt: 'ritesh portrait',

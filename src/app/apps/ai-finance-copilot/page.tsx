@@ -4,11 +4,10 @@ import {
   type AppPageMetadata,
   type AppPageSection,
 } from '@/components/layout';
-import {
-  FeaturesSection,
-  TechnologiesSection,
-  CustomListSection,
-} from '@/components/sections';
+// Direct imports: the sections index also pulls in the Skills icons
+import FeaturesSection from '@/components/sections/FeaturesSection';
+import TechnologiesSection from '@/components/sections/TechnologiesSection';
+import CustomListSection from '@/components/sections/CustomListSection';
 import { ChallengeIcon, TechnologiesIcon } from '@/icons';
 import { TbCircleKeyFilled } from 'react-icons/tb';
 

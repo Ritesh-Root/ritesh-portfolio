@@ -9,17 +9,19 @@ import Socials from '@/components/Socials';
 import { BackgroundLines } from '@/components/ui/background-lines';
 import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
 import Border from '@/components/Border';
-import { Archive, BookOpen, BriefCase, Envelope } from '@/icons';
+import { BookOpen, BriefCase, Envelope } from '@/icons';
+import { TbTrophy } from 'react-icons/tb';
+import { HACKATHON_BUILDS_2026, HACKATHONS } from '@/lib/constants/hackathons';
 
 // Dynamic imports for section components
 const AboutSection = lazy(() => import('@/components/sections/AboutSection'));
+const HackathonsSection = lazy(
+  () => import('@/components/sections/HackathonsSection')
+);
 const WorkExperienceSection = lazy(
   () => import('@/components/sections/WorkExperienceSection')
 );
 const SkillsSection = lazy(() => import('@/components/sections/SkillsSection'));
-const ProjectsSection = lazy(
-  () => import('@/components/sections/ProjectsSection')
-);
 const ContactSection = lazy(
   () => import('@/components/sections/ContactSection')
 );
@@ -41,11 +43,11 @@ const renderIcon = (iconType: string) => {
           <span className="icon-blur absolute inset-0 -z-10 bg-skills_purple"></span>
         </>
       );
-    case 'archive':
+    case 'trophy':
       return (
         <>
-          <Archive height="28" width="28" />
-          <span className="icon-blur absolute inset-0 -z-10 bg-my_work_yellow"></span>
+          <TbTrophy className="h-7 w-7" aria-hidden="true" />
+          <span className="icon-blur absolute inset-0 -z-10 bg-hackathons_green"></span>
         </>
       );
     case 'envelope':
@@ -74,6 +76,19 @@ const renderDescription = (type: string) => {
           building projects &amp; competing in hackathons
         </div>
       );
+    case 'hackathons':
+      return (
+        <div>
+          <span className="text-hackathons_green">
+            {HACKATHONS.length} recognitions
+          </span>{' '}
+          and{' '}
+          <span className="text-hackathons_green">
+            {HACKATHON_BUILDS_2026} hackathon builds
+          </span>{' '}
+          shipped in 2026
+        </div>
+      );
     case 'skills':
       return (
         <div>
@@ -81,13 +96,6 @@ const renderDescription = (type: string) => {
           with experience in <span className="text-skills_purple">AI/ML</span>,{' '}
           <span className="text-skills_purple">Frontend</span> &amp;{' '}
           <span className="text-skills_purple">Backend</span> technologies
-        </div>
-      );
-    case 'projects':
-      return (
-        <div>
-          My <span className="text-my_work_yellow">top projects</span> as a full
-          stack <span className="text-my_work_yellow">AI</span> developer
         </div>
       );
     case 'contact':
@@ -106,7 +114,7 @@ export const sections = [
   { index: 0, title: 'About Me', id: 'about-me' },
   { index: 1, title: 'Work Experience', id: 'work-experience' },
   { index: 2, title: 'Skills', id: 'skills' },
-  { index: 3, title: 'My Work', id: 'my-work' },
+  { index: 3, title: 'Hackathons', id: 'hackathons' },
   { index: 4, title: 'Contact Me', id: 'contact' },
 ];
 
@@ -139,7 +147,10 @@ export default function Home() {
       <div id="stars-container" className="relative">
         <Container>
           {/* Work Experience Section */}
-          <Section id="work-experience" className="mt-28 pt-24">
+          <Section
+            id="work-experience"
+            className="mt-16 pt-16 md:mt-28 md:pt-24"
+          >
             <Border />
             <SectionHeader
               icon={renderIcon('briefcase')}
@@ -152,7 +163,7 @@ export default function Home() {
           </Section>
 
           {/* Skills Section */}
-          <Section id="skills" className="mt-28 pt-24">
+          <Section id="skills" className="mt-16 pt-16 md:mt-28 md:pt-24">
             <Border />
             <SectionHeader
               icon={renderIcon('book')}
@@ -164,21 +175,21 @@ export default function Home() {
             </Suspense>
           </Section>
 
-          {/* Projects Section */}
-          <Section id="my-work" className="mt-28 pt-24">
+          {/* Hackathons Section */}
+          <Section id="hackathons" className="mt-16 pt-16 md:mt-28 md:pt-24">
             <Border />
             <SectionHeader
-              icon={renderIcon('archive')}
-              title="My Work"
-              description={renderDescription('projects')}
+              icon={renderIcon('trophy')}
+              title="Hackathons"
+              description={renderDescription('hackathons')}
             />
             <Suspense fallback={<LoadingSpinner size="lg" />}>
-              <ProjectsSection />
+              <HackathonsSection />
             </Suspense>
           </Section>
 
           {/* Contact Section */}
-          <Section id="contact" className="mt-28 pt-24">
+          <Section id="contact" className="mt-16 pt-16 md:mt-28 md:pt-24">
             <Border />
             <SectionHeader
               icon={renderIcon('envelope')}

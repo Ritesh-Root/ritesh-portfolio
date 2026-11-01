@@ -3,13 +3,14 @@
 import { useEffect } from 'react';
 import useExpandableStore, { Menu } from '../store/useExpandableStore';
 import useExplorerStore, { SubMenu } from '../store/useExplorerStore';
+import { isPhoneWidth } from '../utils/viewport';
 
 export function useTogglePortfolio() {
   const { toggleMenu } = useExpandableStore();
   const { toggleMenu: togglePortfolio } = useExplorerStore();
 
   useEffect(() => {
-    if (window.innerWidth < 768) {
+    if (isPhoneWidth()) {
       return;
     }
     toggleMenu(Menu.EXPLORER);

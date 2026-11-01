@@ -49,7 +49,7 @@ import useSectionStore, { Section } from '@/lib/store/useSectionStore';
 import { FadeInStagger } from '@/components/FadeIn';
 import { MyWork } from '@/app/layout';
 import { MdOutlineFeaturedPlayList } from 'react-icons/md';
-import { TbCircleKeyFilled } from 'react-icons/tb';
+import { TbCircleKeyFilled, TbTrophy } from 'react-icons/tb';
 
 const staticFiles = [
   { name: '.eslintrc.json', icon: <Eslint /> },
@@ -71,6 +71,7 @@ const fileType = {
 
 const subSectionsIcons: { [key: string]: JSX.Element } = {
   'about-me': <AboutMe />,
+  hackathons: <TbTrophy color="#7ee787" size={18} />,
   'work-experience': <WorkExperience />,
   skills: <Technologies />,
   'my-work': <Projects />,

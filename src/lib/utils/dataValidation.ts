@@ -55,6 +55,22 @@ export function validateTechnology(tech: unknown): tech is Technology {
 }
 
 /**
+ * Validates a skill tile: like a Technology, but with an image or an icon
+ */
+function validateSkillTechnology(tech: unknown): boolean {
+  if (typeof tech !== 'object' || tech === null) return false;
+
+  const t = tech as Record<string, unknown>;
+
+  return (
+    typeof t.name === 'string' &&
+    (typeof t.image === 'string' || typeof t.icon === 'function') &&
+    isValidTechnologyCategory(t.category as string) &&
+    (t.link === undefined || typeof t.link === 'string')
+  );
+}
+
+/**
  * Validates a Project object
  */
 export function validateProject(project: unknown): project is Project {
@@ -116,7 +132,7 @@ export function validateSkill(skill: unknown): skill is Skill {
   return (
     typeof s.category === 'string' &&
     Array.isArray(s.technologies) &&
-    s.technologies.every(validateTechnology)
+    s.technologies.every(validateSkillTechnology)
   );
 }
 

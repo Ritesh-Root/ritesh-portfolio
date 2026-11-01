@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import Image from 'next/image';
 import { FadeIn } from '../FadeIn';
-import { Skill } from '@/lib/types/portfolio';
+import { Skill, SkillTechnology } from '@/lib/types/portfolio';
 
 interface SkillGridProps {
   skills: readonly Skill[];
@@ -38,28 +38,35 @@ const SkillCategory = memo<SkillCategoryProps>(({ skill }) => {
 });
 
 interface TechnologyItemProps {
-  technology: {
-    name: string;
-    image: string;
-  };
+  technology: SkillTechnology;
 }
 
 const TechnologyItem = memo<TechnologyItemProps>(({ technology }) => {
   return (
-    <FadeIn className="flex w-24 flex-col">
+    <FadeIn className="flex w-[4.5rem] flex-col sm:w-24">
       <div>
-        <Image
-          src={technology.image}
-          className="m-auto rounded-md object-contain"
-          alt={`${technology.name} logo`}
-          height={64}
-          width={64}
-          style={{
-            width: 64,
-            height: 64,
-          }}
-        />
-        <h3 className="m-2 mx-auto w-min px-2 text-center text-sm font-semibold tracking-tight text-gray-500">
+        {technology.icon ? (
+          <div
+            className="m-auto flex h-12 w-12 items-center justify-center sm:h-16 sm:w-16"
+            role="img"
+            aria-label={`${technology.name} logo`}
+          >
+            <technology.icon
+              className="h-10 w-10 sm:h-[52px] sm:w-[52px]"
+              color={technology.color}
+              aria-hidden="true"
+            />
+          </div>
+        ) : (
+          <Image
+            src={technology.image}
+            className="m-auto h-12 w-12 rounded-md object-contain sm:h-16 sm:w-16"
+            alt={`${technology.name} logo`}
+            height={64}
+            width={64}
+          />
+        )}
+        <h3 className="mx-auto my-2 w-full px-1 text-center text-xs font-semibold tracking-tight text-gray-500 sm:text-sm">
           {technology.name}
         </h3>
       </div>

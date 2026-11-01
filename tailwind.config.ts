@@ -1,6 +1,8 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
+  // The site is always dark (VS Code theme); don't follow the OS setting.
+  darkMode: 'selector',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -14,12 +16,12 @@ const config: Config = {
         dark_2_border: '#1e1e1e',
         topbar_dark_bg: '#323233',
         activity_dark_bg: '#252526',
-        about_me_green: '#7ee787',
         about_me_blue: '#008bc9',
         work_experience_orange: '#ffa28b',
         work_experience_brown: '#412a25',
         skills_purple: '#939aff',
         my_work_yellow: '#ffdc8b',
+        hackathons_green: '#7ee787',
         white: '#FFF',
         'red-500': '#E51400',
         'gray-200': '#292E42',

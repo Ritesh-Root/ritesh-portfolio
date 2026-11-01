@@ -28,12 +28,14 @@ const AboutSection = memo<AboutSectionProps>(({ className }) => {
             title="About Me"
             description={
               <div>
-                A passionate{' '}
-                <span className="text-about_me_blue">software engineer</span>{' '}
-                specializing in <span className="text-about_me_blue">web</span>{' '}
-                and{' '}
-                <span className="text-about_me_blue">mobile development</span>,
-                dedicated to building seamless digital experiences.
+                An{' '}
+                <span className="text-about_me_blue">
+                  AI full-stack developer
+                </span>{' '}
+                building{' '}
+                <span className="text-about_me_blue">GenAI agents</span>,{' '}
+                <span className="text-about_me_blue">LLM systems</span> and
+                end-to-end products that ship.
               </div>
             }
           />

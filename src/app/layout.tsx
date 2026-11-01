@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
 import {
@@ -43,6 +43,14 @@ export const metadata: Metadata = {
     siteName: SITE_CONFIG.name,
     type: 'website',
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  // Match the Android browser bar to the top bar.
+  themeColor: '#323233',
+  colorScheme: 'dark',
 };
 
 export interface MyWork {
@@ -107,9 +115,9 @@ export default function RootLayout({
   ];
 
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} flex max-h-screen min-h-screen flex-col scroll-smooth bg-dark_bg antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} flex h-screen flex-col scroll-smooth bg-dark_bg antialiased supports-[height:100dvh]:h-dvh`}
       >
         <TopBar />
         <main className="relative flex flex-1 overflow-hidden">

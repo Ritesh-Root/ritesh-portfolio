@@ -2,6 +2,7 @@
  * Portfolio-specific types and interfaces
  */
 
+import type { IconType } from 'react-icons';
 import { BaseEntity, ImageAsset } from './common';
 
 export const PROJECT_CATEGORIES = {
@@ -70,9 +71,36 @@ export interface WorkExperience extends BaseEntity {
   isCurrentRole?: boolean;
 }
 
+/** A skill tile shows either a logo image or a brand icon. */
+export type SkillTechnology = Omit<Technology, 'image'> &
+  (
+    | { image: string; icon?: never; color?: never }
+    | { icon: IconType; color: string; image?: never }
+  );
+
 export interface Skill {
   category: string;
-  technologies: Technology[];
+  technologies: SkillTechnology[];
+}
+
+export interface HackathonResult {
+  id: string;
+  /** e.g. "2nd Prize", "Top 10 Finalist" */
+  result: string;
+  tier: 'prize' | 'finalist' | 'shortlist';
+  event: string;
+  organizer: string;
+  date: string;
+  detail?: string;
+  project?: {
+    name: string;
+    href: string;
+  };
+}
+
+export interface CertificationGroup {
+  issuer: string;
+  items: string[];
 }
 
 export interface PersonalInfo {
